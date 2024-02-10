@@ -1,0 +1,82 @@
+#accordian {
+    margin: 100px auto;
+    width: 600px;
+}
+
+#accordian li {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: hsl(0, 0%, 96%);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#accordian li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: purple
+}
+
+#accordian li label span {
+    font-size: 22px;
+    color: purple
+}
+
+#accordian label+input[type="radio"] {
+    display: none;
+}
+
+#accordian .content {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordian label+input[type="radio"]:checked+.content {
+    max-height: 400px;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .About {
+        display: grid;
+    }
+
+    .about-me {
+        display: grid;
+        margin: auto;
+        width: 90%;
+    }
+
+    .hideInMobView {
+        display: none;
+    }
+
+    .showInMobView {
+        display: inline;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .accordian {
+        display: grid;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .accordian h2 {
+        width: 55%;
+    }
+
+    #accordian li .content p {
+        width: 50%;
+    }
+}
