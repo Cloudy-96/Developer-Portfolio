@@ -4,3 +4,30 @@
   padding: 2rem;
   text-align: center;
 } */
+
+.gradient {
+  background: linear-gradient(126deg,
+    hsl(331.88, 35.96%, 65.1%) 0%,
+    hsla(325.89, 31.49%, 63.6%, 0.989) 9.7%,
+    hsla(317.09, 26.62%, 61.83%, 0.975) 18.6%,
+    hsla(303.72, 21.56%, 59.78%, 0.96) 26.7%,
+    hsla(286.1, 22.54%, 59.59%, 0.942) 34.2%,
+    hsla(270.36, 25.44%, 59.98%, 0.923) 41%,
+    hsla(256.63, 28.65%, 60.4%, 0.902) 47.4%,
+    hsla(244.71, 32.18%, 60.85%, 0.88) 53.5%,
+    hsla(234.87, 38.1%, 60.03%, 0.856) 59.2%,
+    hsla(228.29, 45.49%, 58.12%, 0.831) 64.8%,
+    hsla(223.73, 52.53%, 56.12%, 0.805) 70.3%,
+    hsla(220.42, 59.21%, 54.04%, 0.777) 75.8%,
+    hsla(217.91, 65.51%, 51.89%, 0.749) 81.4%,
+    hsla(215.95, 72.36%, 49.68%, 0.72) 87.3%,
+    hsla(214.4, 85.38%, 47.41%, 0.69) 93.4%,
+    hsla(213.13, 100%, 45.1%, 0.66) 100%);
+}
+
+.bgImage { 
+background-image: url("https://images.followalice.com/4hWRlLrxdRQyRPjfcw3fi6/3a64145aef24a98fa291baeaa38b7a0b/Mt_Kilimanjaro_seen_from_Amboseli.jpg?q=80&fit=fill&f=center&w=1200&h=1200");
+background-position: center;
+background-repeat: cover;
+width: 100%;
+}

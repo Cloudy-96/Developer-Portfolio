@@ -11,7 +11,7 @@
 //   JiraSVG,
 //   GitSVG,
 // } from "../svgs/tech-skills";
-import "./Experience.css"
+import "./Experience.css";
 const Experience = () => {
   return (
     <>
@@ -19,6 +19,11 @@ const Experience = () => {
         <h2 className="text-raleway-md mx-auto">Experience:</h2>
 
         <section className="pr-12 flex flex-col space-y-3  pb-[28px]">
+          <div className="max-w-5xl text-left mx-auto flex-flex-col space-y-[16px]">
+            <p>Developer at OhBaby! Games</p>
+          </div>
+        </section>
+ git pull       <section className="pr-12 flex flex-col space-y-3  pb-[28px]">
           <div className="max-w-5xl text-left mx-auto flex-flex-col space-y-[16px]">
             <p>
               Completed a full-time 6-month training program as a full stack

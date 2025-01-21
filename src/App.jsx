@@ -2,44 +2,19 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 
 function App() {
   return (
     <>
-      <div className="grid lg:flex h-dvh">
-        <hero className="lg:w-[35%] h-dvh lg:relative top-0 bg-light-background">
-          {/* <header
-            className="relative flex justify-between w-[100%] bg-light-accent "
-            id="header"
-          >
-            <h1 className="title text-raleway-bold text-light-background">
-              Kat De Mey
+      <div className="grid lg:flex bg-red-900 min-h-[450px] lg:h-dvh">
+        <hero className="lg:max-w-[35%] flex bgImage">
+          <div className="self-intro flex-col space-y-4 py-2 rounded mx-4 px-4 my-auto bg-opacity-[50%] gradient h-fit">
+            <h1 className="text-xl lg:text-5xl text-light-txt text-center">
+              Frontend Developer
             </h1>
-            <nav className="flex gap-4 px-2 right">
-              <div className="about-me-button">
-                <a href="#about-me">About Me</a>
-              </div>
-              <div className="FAQs-button">
-                <a href="#FAQs">FAQs</a>
-              </div>
-              <div>
-                <a href="#portfolio">Portfolio</a>
-              </div>
-              <div>
-                <a href="#experience">Experience</a>
-              </div>
-              <div>
-                <a href="#contact">Contact</a>
-              </div>
-            </nav>
-          </header> */}
 
-          <div className="self-intro pt-36 pb-20 bg-light-background">
-            <h1 className="text-5xl text-light-txt  ">
-              Web Developer at OhBaby! Games
-            </h1>
-            <div className="text-xl text-light-txt  p-6">
+            <div className="lg:text-xl text-light-txt">
               <p className="text-light-txt ">
                 Hi I'm Kat, a junior full stack developer based in Leamington
                 Spa, UK.
@@ -54,10 +29,11 @@ function App() {
                 and <scan>Node.js</scan>.
               </p>
             </div>
+
           </div>
         </hero>
 
-        <main className="bg-slate-50 lg:w-[65%] flex flex-col px-[20px] overflow-y-scroll">
+        <main className="bg-slate-50 lg:max-w-[65%] flex flex-col px-[20px] overflow-y-scroll">
           {/* ABOUT ME */}
           <AboutMe />
 
