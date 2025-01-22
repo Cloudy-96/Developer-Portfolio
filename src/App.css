@@ -26,8 +26,16 @@
 }
 
 .bgImage { 
-background-image: url("https://images.followalice.com/4hWRlLrxdRQyRPjfcw3fi6/3a64145aef24a98fa291baeaa38b7a0b/Mt_Kilimanjaro_seen_from_Amboseli.jpg?q=80&fit=fill&f=center&w=1200&h=1200");
+/* background-image: url("https://images.followalice.com/4hWRlLrxdRQyRPjfcw3fi6/3a64145aef24a98fa291baeaa38b7a0b/Mt_Kilimanjaro_seen_from_Amboseli.jpg?q=80&fit=fill&f=center&w=1200&h=1200"); */
+  background-image: url("./assets/kat.png");
 background-position: center;
-background-repeat: cover;
 width: 100%;
+background-size: contain;
+/* background-repeat: no-repeat; */
+}
+
+.bgImageGithub {
+  background-image: url("./assets/github.png");
+  background-repeat: cover; 
+  width: 100%;
 }

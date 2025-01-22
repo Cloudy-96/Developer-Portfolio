@@ -15,7 +15,7 @@ import "./Experience.css";
 const Experience = () => {
   return (
     <>
-      <div className="mx-auto px-3 border-b-2 w-[100%] pt-[28px]">
+      <div className="mx-auto px-3 border-b-2 w-[100%] pt-[28px] text-dark-txt">
         <h2 className="text-raleway-md mx-auto">Experience:</h2>
 
         <section className="pr-12 flex flex-col space-y-3  pb-[28px]">
@@ -23,7 +23,7 @@ const Experience = () => {
             <p>Developer at OhBaby! Games</p>
           </div>
         </section>
- git pull       <section className="pr-12 flex flex-col space-y-3  pb-[28px]">
+        <section className="pr-12 flex flex-col space-y-3  pb-[28px]">
           <div className="max-w-5xl text-left mx-auto flex-flex-col space-y-[16px]">
             <p>
               Completed a full-time 6-month training program as a full stack
@@ -48,7 +48,7 @@ const Experience = () => {
           <div className="skills">
             <h3 className="text-xl font-semibold m-10">Tech Stack</h3>
 
-            <ul className="flex justify-center gap-5">
+            <ul className="flex justify-center gap-5 wax-w-[80%] border overflow-hidden my-auto">
               <li>HTML & CSS</li>
               <li>Javascript</li>
               <li>React</li>

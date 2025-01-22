@@ -2,7 +2,11 @@
 import "./Portfolio.css";
 import AOPD from "../assets/AOPD.png";
 import BookStat from "../assets/homepage.png";
-const projects = [
+import AppleDl from "../assets/apple-dl.png";
+import GooglePlay from "../assets/googleplay.png";
+import screenShot from "../assets/mobile-screenshot.png";
+
+const petProjects = [
   {
     name: "BookStat App",
     about:
@@ -41,62 +45,92 @@ const projects = [
   },
 ];
 
+const OBB = [
+  {
+    id: 0,
+    name: "Oh Baby! Games",
+    about:
+      "This project was created as a nod to my love of reading and tracking books. BookStat acts as a digital book-journal which allows users to log information in a way that suits them.",
+    img: "https://www.ohbabygames.com/assets/obk-b65cc761.jpg",
+    readMoreUrl: "https://www.ohbabygames.com/",
+  },
+  {
+    id: 1,
+    name: "Oh Baby! Mobile",
+    about: "Developed for both ios and Android",
+    img: screenShot,
+    readMoreUrl:
+      "https://play.google.com/store/apps/details?id=com.obbgames.obbmobile&pli=1",
+  },
+];
+
 const Portfolio = () => {
   return (
     <>
-      <div className="mx-auto lg:px-3 border-b-2 w-[100%] pt-[28px]">
+      <div className="mx-auto lg:px-3 border-b-2 w-[100%] py-[24px] text-dark-txt flex-col space-y-6">
         <h2 className="text-raleway-md mx-auto">Portfolio:</h2>
 
-        <div className="flex justify-center mx-auto ">
-          <ul className=" projects flex gap-6 overflow-auto">
-            {projects.map((project) => (
-              <li
-                key="project.id"
-                className="shadow-light-primary bg-opacity-[60%] shadow-md rounded-md m-2 grid mx-auto w-fit max-w-[400px] cursor-pointer"
+        <div className="flex justify-center mx-auto">
+          <ul className=" projects flex gap-6 overflow-auto ">
+            <li
+              key="OBB[0].id"
+              className="shadow-dark-primary bg-opacity-[60%] bg-dark-primary shadow-md rounded-md m-2 grid mx-auto w-fit max-w-[400px] cursor-pointer"
+            >
+              <a
+                className="cursor-pointer underline"
+                href={
+                  OBB[0].readMoreUrl
+                    ? OBB[0].readMoreUrl
+                    : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                }
+                target="_blank"
+                rel="noreferrer"
               >
-                {/* <h2 className="text-xl font-semibold m-4 ">{project.name}</h2> */}
+                <h2 className="text-xl font-semibold m-4 ">{OBB[0].name}</h2>
                 <img
                   className="rounded-md"
-                  src={project.img}
-                  alt={`${project.name} snapshot coming soon`}
+                  src={OBB[0].img}
+                  alt={`${OBB[0].name} snapshot coming soon`}
                 />
-                <p className="hidden m-4 text-light-txt">{project.about}</p>
-                <div className="hidden">
-                  <a
-                    className="cursor-pointer underline"
-                    href={
-                      project.readMoreUrl
-                        ? project.readMoreUrl
-                        : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    See more
-                  </a>
-                  <br />
-                  <a
-                    className="cursor-pointer underline "
-                    href={project.gitHub}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    GitHub
-                  </a>
+                <p className="hidden m-4 text-dark-txt">{OBB[0].about}</p>
+              </a>
+            </li>
 
-                  {/* TECH STACK */}
-                  <div className="flex my-2 mx-auto text-light-txt">
-                    <ul className="flex gap-5 mx-auto my-2">
-                      {project.techStack.map((stack) => (
-                        <li className="border border-current p-1 rounded self-center">
-                          {stack}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+            <li className="shadow-dark-primary bg-opacity-[60%] bg-dark-primary shadow-md rounded-md m-2 grid mx-auto w-fit max-w-[400px]h-[100%]">
+              <h2 className="text-xl font-semibold m-4 cursor-pointer">
+                {OBB[1].name}
+              </h2>
+              <div className="flex gap-2 h-[100%] bg-slate-200 rounded-lg">
+                <img
+                  className="rounded-md h-[200px] cursor-pointer"
+                  src={OBB[1].img}
+                  alt={`${OBB[1].name} snapshot coming soon`}
+                />
+                <div className="*:rounded-lg *:w-[100px] space-y-2 flex-col p-1 *:cursor-pointer my-auto">
+                  <img className="rounded-md" src={AppleDl} alt={`apple`} />{" "}
+                  <img className="rounded-md" src={GooglePlay} />
                 </div>
-              </li>
-            ))}
+              </div>
+              <p className="hidden m-4 text-dark-txt">{OBB[1].about}</p>
+            </li>
+          </ul>
+        </div>
+
+        <div className="mx-auto lg:px-3 w-[100%] text-dark-txt">
+          <h2 className="text-raleway-md mx-auto">Solo Projects:</h2>
+
+          <ul className=" projects flex gap-6 overflow-auto ">
+            <li className="shadow-dark-primary bg-opacity-[60%] bg-dark-primary shadow-md rounded-md m-2 grid mx-auto w-fit max-w-[400px]h-[100%]">
+              <h2 className="text-xl font-semibold m-4 cursor-pointer">
+                {petProjects[0].name}
+              </h2>
+              <img
+                className="rounded-md h-[200px] cursor-pointer"
+                src={petProjects[0].img}
+                alt={`${petProjects[0].name} snapshot coming soon`}
+              />
+              <p className="hidden m-4 text-dark-txt">{petProjects[0].about}</p>
+            </li>
           </ul>
         </div>
       </div>
